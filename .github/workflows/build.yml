@@ -2,9 +2,9 @@ name: Compilación automática
 
 on:
   push:
-    branches: [ main ]
+    branches: [ feature/workflow ]
   pull_request:
-    branches: [ main ]
+    branches: [ feature/workflow ]
 
 jobs:
   build:
