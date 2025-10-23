@@ -1,0 +1,14 @@
+name: Compilación automática 
+on: 
+push: 
+branches: [ main ] 
+jobs: 
+build: 
+runs-on: ubuntu-latest 
+steps: - name: Clonar el repositorio 
+uses: actions/checkout@v4 
+#MODIFICAR DE ACUERDO AL LENGUAJE DE PROGRAMACION EMPLEADO 
+[INVESTIGACIÓN] - name: Compilar código (C++ ejemplo) 
+run: | 
+g++ -o programa main.cpp 
+./programa 
